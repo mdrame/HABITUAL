@@ -21,10 +21,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Createing Screen
         window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = ViewController()
-        viewController.view.backgroundColor = .systemPink
+        let viewController = HabitsTableViewController.instantiate()
+        let navigationController = UINavigationController(rootViewController: viewController)
+//        viewController.view.backgroundColor = .systemPink
         
-        window?.rootViewController = viewController
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         window?.windowScene = windowScence
         
