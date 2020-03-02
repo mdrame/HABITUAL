@@ -15,6 +15,8 @@ class HabitsTableViewController: UITableViewController {
         Habit(title: "Commit Today", image: Habit.Images.book),
         Habit(title: "Stand up every Hour", image: Habit.Images.book)
     ]
+    private var persistence = PersistenceLayer()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +30,7 @@ class HabitsTableViewController: UITableViewController {
     
     // TableView Delegate and DataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return habits.count
+        return persistence.habits.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

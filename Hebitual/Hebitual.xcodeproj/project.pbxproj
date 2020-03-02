@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770B7C39240CA57E0094F469 /* PersistenceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B7C38240CA57E0094F469 /* PersistenceLayer.swift */; };
 		770B7CE724064F1A00C25197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B7CE624064F1A00C25197 /* AppDelegate.swift */; };
 		770B7CE924064F1A00C25197 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B7CE824064F1A00C25197 /* SceneDelegate.swift */; };
 		770B7CF024064F1B00C25197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 770B7CEF24064F1B00C25197 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		770B7C38240CA57E0094F469 /* PersistenceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceLayer.swift; sourceTree = "<group>"; };
 		770B7CE324064F1A00C25197 /* Hebitual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hebitual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		770B7CE624064F1A00C25197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		770B7CE824064F1A00C25197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				770B7DAC24084ED300C25197 /* Habit.swift */,
+				770B7C38240CA57E0094F469 /* PersistenceLayer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				770B7D0924071CA100C25197 /* HabitsTableViewController.swift in Sources */,
 				770B7DAD24084ED300C25197 /* Habit.swift in Sources */,
 				770B7CFE2407144900C25197 /* UIViewControllerExtensions.swift in Sources */,
+				770B7C39240CA57E0094F469 /* PersistenceLayer.swift in Sources */,
 				770B7CE724064F1A00C25197 /* AppDelegate.swift in Sources */,
 				770B7CE924064F1A00C25197 /* SceneDelegate.swift in Sources */,
 				770B7DB22408534600C25197 /* HabitTableViewCell.swift in Sources */,
