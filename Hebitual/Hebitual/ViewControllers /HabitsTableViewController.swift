@@ -18,6 +18,7 @@ class HabitsTableViewController: UITableViewController {
     private var persistence = PersistenceLayer()
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavBar()
@@ -28,6 +29,12 @@ class HabitsTableViewController: UITableViewController {
         )
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           persistence.setNeedsToReloadHabits()
+           tableView.reloadData()
+       }
+    
     // TableView Delegate and DataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return persistence.habits.count
@@ -35,7 +42,7 @@ class HabitsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell( withIdentifier: HabitTableViewCell.identifier, for: indexPath) as! HabitTableViewCell
-        let habit = habits[indexPath.row]
+        let habit = persistence.habits[indexPath.row]
         cell.configure(habit)
         return cell
     }
@@ -52,11 +59,11 @@ extension HabitsTableViewController {
             navigationItem.rightBarButtonItem = addButton
         }
         
-        @objc func pressAddHabit() {
-            habits.insert(Habit(title: "Hellow", image: Habit.Images.pet), at: 0)
-            let topIndexPath = IndexPath(row: 0, section: 0)
-            tableView.insertRows(at: [topIndexPath], with: .automatic)
-            //        tableView.reloadData()
+        @objc func pressAddHabit(_ sender: UIBarButtonItem) {
+          let addHabitVC = AddHabitViewController.instantiate()
+          let navigationController = UINavigationController(rootViewController: addHabitVC)
+          navigationController.modalPresentationStyle = .fullScreen
+          present(navigationController, animated: true, completion: nil)
         }
     
     
