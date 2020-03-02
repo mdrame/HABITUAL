@@ -14,6 +14,8 @@
 		770B7C41240D82250094F469 /* HabitImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770B7C3F240D82250094F469 /* HabitImageCollectionViewCell.xib */; };
 		770B7C44240D886B0094F469 /* ConfirmHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B7C42240D886B0094F469 /* ConfirmHabitViewController.swift */; };
 		770B7C45240D886B0094F469 /* ConfirmHabitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770B7C43240D886B0094F469 /* ConfirmHabitViewController.xib */; };
+		770B7C48240D8DC70094F469 /* HabitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B7C46240D8DC70094F469 /* HabitDetailViewController.swift */; };
+		770B7C49240D8DC70094F469 /* HabitDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770B7C47240D8DC70094F469 /* HabitDetailViewController.xib */; };
 		770B7CE724064F1A00C25197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B7CE624064F1A00C25197 /* AppDelegate.swift */; };
 		770B7CE924064F1A00C25197 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770B7CE824064F1A00C25197 /* SceneDelegate.swift */; };
 		770B7CF024064F1B00C25197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 770B7CEF24064F1B00C25197 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		770B7C3F240D82250094F469 /* HabitImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		770B7C42240D886B0094F469 /* ConfirmHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmHabitViewController.swift; sourceTree = "<group>"; };
 		770B7C43240D886B0094F469 /* ConfirmHabitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmHabitViewController.xib; sourceTree = "<group>"; };
+		770B7C46240D8DC70094F469 /* HabitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewController.swift; sourceTree = "<group>"; };
+		770B7C47240D8DC70094F469 /* HabitDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitDetailViewController.xib; sourceTree = "<group>"; };
 		770B7CE324064F1A00C25197 /* Hebitual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hebitual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		770B7CE624064F1A00C25197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		770B7CE824064F1A00C25197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 				770B7D0724071CA100C25197 /* HabitsTableViewController.swift */,
 				770B7C3A240D7E590094F469 /* AddHabitViewController.swift */,
 				770B7C42240D886B0094F469 /* ConfirmHabitViewController.swift */,
+				770B7C46240D8DC70094F469 /* HabitDetailViewController.swift */,
 			);
 			path = "ViewControllers ";
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 		770B7CFB240713E900C25197 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				770B7C47240D8DC70094F469 /* HabitDetailViewController.xib */,
 				770B7C43240D886B0094F469 /* ConfirmHabitViewController.xib */,
 				770B7C3B240D7E590094F469 /* AddHabitViewController.xib */,
 				770B7D0824071CA100C25197 /* HabitsTableViewController.xib */,
@@ -193,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770B7C49240D8DC70094F469 /* HabitDetailViewController.xib in Resources */,
 				770B7D0A24071CA100C25197 /* HabitsTableViewController.xib in Resources */,
 				770B7C3D240D7E590094F469 /* AddHabitViewController.xib in Resources */,
 				770B7C45240D886B0094F469 /* ConfirmHabitViewController.xib in Resources */,
@@ -210,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770B7C48240D8DC70094F469 /* HabitDetailViewController.swift in Sources */,
 				770B7D0924071CA100C25197 /* HabitsTableViewController.swift in Sources */,
 				770B7DAD24084ED300C25197 /* Habit.swift in Sources */,
 				770B7CFE2407144900C25197 /* UIViewControllerExtensions.swift in Sources */,
